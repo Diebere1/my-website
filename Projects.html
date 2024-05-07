@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navgation section  -->
+  <div class="header">
+    <a href="homepage.html">
+      <img src="images/logo_small.png" alt="">
+    </a>
+
+    <nav class="js-navbar">
+      <ul id="navbar">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="Projects.html">Project</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <!-- <button class="contact-btn"> Contact me</button> -->
+      </ul>
+
+      <div class="social-contact">
+        <a href="#">
+          <img src="images/Brand Logos.png" height="31px">
+        </a>
+        <a href="#">
+          <img src="images/fb.png" height="31px">
+        </a>
+        <a href="#">
+          <img src="images/github.png" height="31px">
+        </a>
+      </div>
+    </nav>
+
+    <div>
+      <input type="checkbox" id="menyAvPaa" hidden>
+      <label id="burger" for="menyAvPaa" class="js-menu">
+        <div class="js-div"></div>
+        <div class="js-div"></div>
+        <div class="js-div"></div>
+      </label>
+    </div>
+  </div>
+
+  <section class="project-section">
+    <div class="overLay" id="project-overlay">
+      <div class="my-project-div">
+        <div class="my-project-title">
+          <div class="vertical-line"></div>
+          <p class="project-text">projects</p>
+        </div>
+  
+        <p class="project-paragraph">Here you will find some of the personal and clients projects that i created with each project contaning its own case study.</p>
+      </div>
+
+      <div class="projects-content">
+        <div class="projects-row">
+          <img src="images/boreal-coffee-clone.png" alt="" class="projects-row-img">
+
+          <div class="projects-row-content">
+            <h3> Boreal Coffee Clone </h3>
+            <p class="projects-row-content-desc">
+              I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.
+            </p>
+  
+            <button class="case-btn">case study</button>
+          </div>
+        </div>
+
+        <div class="projects-row">
+          <img src="images/crown-template.png" alt="" class="projects-row-img">
+
+          <div class="projects-row-content">
+            <h3> Crown Template </h3>
+            <p class="projects-row-content-desc">
+              Crown is a web template that I created targeting the restaurant and food industry which anyone can use to present their business online.
+            </p>
+  
+            <button class="case-btn">case study</button>
+          </div>
+        </div>
+
+        <div class="projects-row">
+          <img src="images/dopefolio.png" alt="" class="projects-row-img">
+
+          <div class="projects-row-content">
+            <h3> Dopefolio </h3>
+            <p class="projects-row-content-desc">
+              Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally.
+            </p>
+  
+            <button class="case-btn">case study</button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <script src="scripts/resume.js"></script>
+  <script src="scripts/project.js"></script>
+</body>
+</html>

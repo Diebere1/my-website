@@ -1,0 +1,246 @@
+/* Navigations */
+/* Navgation section  */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px 70px;
+  position: fixed;
+  z-index: 999;
+  border-bottom: 1px solid #eca11f;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+.header img {
+  width: 40%;
+}
+.header a {
+  text-decoration: none;
+}
+nav{
+  width: 750px;
+  display: flex;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+nav li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+}
+nav li a::after{
+  content: '';
+  width: 0px;
+  height: 2px;
+  background: #fcbc4c ;
+}
+
+nav li a:hover,
+nav li a.active{
+  color: #fcbc4c;
+  transition: 0.5s;
+}
+nav li a.active::after{
+  content: "";
+  width: 20%;
+  background: #fcbc4c;
+  position: absolute;
+  bottom: -6px;
+  left: 33px;
+  transition: 0.5s;
+}
+.contact-btn{
+  margin-left: 220px;
+}
+.social-contact{
+  margin-left: 250px;
+}
+.social-contact img{
+  border: 2px solid #eca11f;
+  padding: 5px;
+  border-radius: 50px;
+  border-style:dashed;
+  width: 30px;
+  margin-left: 8px;
+}
+.social-contact img:hover{
+  border: 2px solid #fff;
+  border-style:dashed;
+  color: white;
+  filter: brightness(0) invert(1);
+  transition: 0.5s ease-in-out;
+}
+button {
+  padding: 10px 30px 10px 30px;
+  width: 160px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial;
+  background: transparent;
+  border: 2px solid #eca11f;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+  color: #eca11f;
+  border-radius: 10px;
+}
+button:hover{
+  border: 2px solid #fad79b;
+  color: #fad79b;
+}
+.icon{
+  display: none;
+}
+
+/* Tablet size screem  */
+@media only screen and (max-width: 768px){
+  .header{
+    padding: 20px;
+  }
+  nav {
+    width: 250px;
+  }
+  nav ul {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    flex-direction: column;
+    /* width: 300px; */
+    justify-content: flex-start;
+    align-items: center;
+    animation: slideIn 0.5s ease-in-out ; 
+    animation: slideOut 0.5s ease-in-out ;   
+  }
+  nav li {
+    padding: 0;
+    /* margin-bottom: 50px; */
+    /* margin-top: 20px; */
+    margin-top: 100px;
+    text-align: center;
+  }
+  nav li a{
+    color: white;
+    padding: 30px 20px;
+    font-size: 28px;
+  }
+  nav li a.active::after,
+  nav li a:hover::after{
+  content: "";
+  width: 75%;
+  background: #fcbc4c;
+  position: absolute;
+  bottom: -6px;
+  left: 19px;
+  transition: 0.5s;
+  } 
+  .contact-btn {
+    margin-left: 0;
+    width: 400px;
+  }
+  .nav-menu{
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  #menyAvPaa:checked ~ #navbar {
+    transform: translateX(0rem);
+  }
+  #burger {
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 25px;
+    right: 20px;
+    top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #burger > div {
+    height: 3px;
+    background-color: #eca11f;
+    transition: 0.5s;
+    z-index: 999;
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+  }
+  #menyAvPaa:checked ~ #burger > div {
+    background-color: white;
+  }
+  #menyAvPaa:checked ~ #burger > div:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+  
+  }
+  #menyAvPaa:checked ~ #burger > div:nth-child(2) {
+    opacity: 0;
+  
+  }
+  #menyAvPaa:checked ~ #burger > div:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  .social-contact {
+    margin-left: 0;
+    width: 280px;
+    margin-top: 8px;
+    margin-left: 60px;
+  }
+  .social-contact img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Phones Screen size  */
+@media only screen and (max-width: 600px){
+  body{
+    overflow: hidden;
+    width: 100%;
+  }
+  .header{
+    padding: 20px;
+    width: 100%;
+  }
+  .header img {
+    width: 180px;
+  }
+  nav {
+    width: 40px;
+  }
+  nav li {
+    padding: 0;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .social-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    margin-top: 7px;
+  }
+  .social-contact img {
+    width: 30px;
+    height: 30px;
+  }
+  #burger {
+    top: 32px;
+    right: 20px;
+    width: 40px;
+    height: 25px
+    /* margin-right: 20px; */
+  }
+}
