@@ -34,6 +34,7 @@
   top: 0;
   left: 0;
   opacity: 0.6;
+  /* object-fit: cover; */
 }
 #overlay{
   width: 100%;
@@ -290,6 +291,12 @@
   .header img {
     width: 60%;
   }
+  .bg-image img {
+    object-fit:cover;
+  }
+  .content {
+    margin-top: 200px;
+  }
   nav ul {
     display: none;
     background-color: rgba(0, 0, 0, 0.8);
@@ -382,9 +389,6 @@
     height: 40px;
     margin-left: 40px;
   }
-  .content {
-    margin-top: 350px;
-  }
   .content h1 {
     font-size:2.8em;
     letter-spacing: 1px;
@@ -396,5 +400,13 @@
   .btn3 {
     margin:10px 0;
     width: 100%;
+  }
+}
+@media screen  and (max-width: 400px){
+  .bg-image img {
+    object-fit:cover;
+  }
+  .content {
+    margin-top: 200px;
   }
 }

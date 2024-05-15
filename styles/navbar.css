@@ -211,11 +211,11 @@ button:hover{
     width: 100%;
   }
   .header{
-    padding: 20px;
+    padding:20px 10px;
     width: 100%;
   }
   .header img {
-    width: 180px;
+    width: 165px;
   }
   nav {
     width: 40px;
@@ -237,10 +237,28 @@ button:hover{
     height: 30px;
   }
   #burger {
-    top: 32px;
+    top: 30px;
     right: 20px;
     width: 40px;
     height: 25px
     /* margin-right: 20px; */
+  }
+}
+
+@media screen  and (max-width: 475px){
+  .social-contact {
+    justify-content: flex-end;
+    width: 12px;
+    margin-top: 4px;
+
+  }
+  .social-contact img {
+    width: 28px;
+    height: 28px;
+  }
+  #burger {
+    right: 10px;
+    width: 35px;
+    height: 23px;
   }
 }
