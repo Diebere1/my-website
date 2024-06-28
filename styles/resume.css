@@ -110,13 +110,25 @@
     overflow-y: auto;
     height: 100%
   }
+  .res-col {
+    padding-left: 0;
+  }
+  .res-item {
+    margin-left: 15px;
+  }
+  .row-line {
+    height: 310px;
+  }
   #edu-row-line {
-    height: 218px;
+    height: 262px;
+  }
+  #edu-row-line2 {
+    height: 220px;
   }
   #prof-row-line {
-    height: 350px;
+    height: 405px;
   }
   #prof-row-line2 {
-    height: 330px;
+    height: 425px;
   }
 }
