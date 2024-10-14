@@ -32,8 +32,12 @@ body {
 .my-contact-div,
 .my-about-div,
 .my-resume-div,
-.skills-paragraph{
+.skills-p-div{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .Skills-div{
   margin-top: 50px;
@@ -73,17 +77,16 @@ body {
 .resume-paragraph{
   font-size: 20px;
   font-weight: 500;
-  /* width: 900px; */
-  /* margin: auto; */
   line-height: 1.6;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans';
 }
 #contact-paragraph-id,
 #about-paragraph-id,
 #skills-paragraph-id{
-  font-size: 18px;
-  width: auto;
-  font-weight: 200;
+  font-size: 20px;
+  width: 900px;
+  font-weight: 500;
+  font-family: 'Josefin Sans';
 }
 .projects-content,
 .resume-content{

@@ -18,7 +18,7 @@ bugerMenu.addEventListener('click', () => {
 // contact button code 
 const contactBtn = document.querySelector('.js-contact-btn');
 contactBtn.addEventListener('click', () => {
-  window.location.href = '/contact.html';
+  window.location.href = 'contact.html';
 });
 
 // for navigation show off from bottom to top 

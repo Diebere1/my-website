@@ -48,7 +48,7 @@
   height: 210px;
 }
 #prof-row-line{
-  height: 348px;
+  height: 320px;
 }
 #prof-row-line2{
   height: 330px;
@@ -75,8 +75,7 @@
   color: #eca11f;
   margin-bottom: 10px;
 }
-.res-info,
-.res-info2{
+.res-info{
   margin-bottom: 1rem;
   font-size: 20px;
   line-height: 26px;
@@ -84,10 +83,13 @@
 .res-item ul{
   margin-left: 20px;
 }
-.res-item ul li{
-  font-size: 20px;
+.res-item ul li,
+.res-info2{
+  font-size: 16px;
   padding-bottom: 10px;
   line-height: 28px;
+  color: #dadada;
+  font-family: "Poppins", sans-serif;
 }
 @media screen  and (max-width: 768px){
   #resume-overlay{

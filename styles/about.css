@@ -32,9 +32,9 @@
 }
 .abt-info-p{
   font-style: italic;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 20px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans';
   line-height: 28px;
 }
 .infos-about-me{
@@ -116,16 +116,23 @@
   margin-bottom: 20px;
   border-radius: 5px;
 }
-#css-prg-bar,
-#ms-word-prg-bar{
+#html-prg-bar{
+  width: 95%;
+}
+#css-prg-bar{
   width: 90%;
 }
-#js-prg-bar,
-#ms-excel-prg-bar{
+#tailwind-prg-bar{
   width: 65%;
 }
-#py-prg-bar{
-  width: 40%;
+#js-prg-bar{
+  width: 75%;
+}
+#react-js-prg-bar{
+  width: 60%;
+}
+#fire-data-prg-bar{
+  width: 70%;
 }
 .progress-bar-wrap{
   background: #d6d6d6;
@@ -140,8 +147,10 @@
   #about-overlay {
     padding: 130px 20px;
   }
-  #about-paragraph-id{
-    font-size: 22px;
+  #resp-sty,
+  #skill-resp-sty{
+    font-size: 18px;
+    width: 100px;
   }
   .image-div {
     width: 100%;
