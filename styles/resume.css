@@ -79,6 +79,7 @@
   margin-bottom: 1rem;
   font-size: 20px;
   line-height: 26px;
+  font-family: 'Josefin Sans';
 }
 .res-item ul{
   margin-left: 20px;
@@ -100,9 +101,19 @@
   }
   .res-col{
     width: 100%;
+    padding-left: 0;
+  }
+  .row-line {
+    height: 220px;
   }
   #edu-row-line{
     height: 190px;
+  }
+  #prof-row-line {
+    height: 265px;
+  }
+  #prof-row-line2 {
+    height: 280px;
   }
 }
 @media screen  and (max-width: 600px){
@@ -122,15 +133,15 @@
     height: 310px;
   }
   #edu-row-line {
-    height: 262px;
+    height: 290px;
   }
   #edu-row-line2 {
-    height: 220px;
+    height: 230px;
   }
   #prof-row-line {
-    height: 405px;
+    height: 450px;
   }
   #prof-row-line2 {
-    height: 425px;
+    height: 465px;
   }
 }

@@ -119,6 +119,12 @@ body {
   max-width: 400px;
   line-height: 1.7;
   margin-bottom: 20px;
+  font-family: 'Josefin Sans';
+}
+.case-btn:hover{
+  border: 2px solid #cf8b14;
+  color: #cf8b14;
+  background-color: transparent;
 }
 .show-menu{
   display: flex;
@@ -166,10 +172,17 @@ body {
   .overLay {
     padding: 130px 20px;
   }
-  .project-text {
+  .project-text, 
+  .contact-text, 
+  .about-text, 
+  .skills-text, 
+  .resume-text {
     font-size: 35px;
   }
-  .project-paragraph {
+  .project-paragraph,
+  .about-paragraph,
+  .skills-paragraph,
+  #contact-paragraph-id {
     max-width: 100%;
     font-size: 1.2rem;
   }
@@ -177,13 +190,19 @@ body {
     width: 100%;
   }
   .projects-row-img {
-    width: 350px;
+    width: 100%;
+  }
+  .projects-row-content {
+    margin-bottom: 40px;
   }
   .projects-row-content h3 {
     font-size: 30px;
   }
   .projects-row-content-desc {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .case-btn{
+    width: 100%;
   }
 }

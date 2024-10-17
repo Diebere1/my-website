@@ -12,6 +12,7 @@
 
     <!-- installration on EmailJs Api for sending message to an Email -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://kit.fontawesome.com/1c8247bb1b.js" crossorigin="anonymous"></script>
 
 
     <!-- <script type="text/Javascript" src="https://cdn.jsdeliver.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -32,12 +33,13 @@
 
       <nav class="js-navbar">
         <ul id="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Projects.html">Project</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li id="list"><a href="index.html">Home</a></li>
+          <li id="list"><a href="about.html">About</a></li>
+          <li id="list"><a href="Projects.html">Project</a></li>
+          <li id="list"><a class="active" href="contact.html">Contact</a></li>
           <!-- <button class="contact-btn"> Contact me</button> -->
         </ul>
+        
         <div class="social-contact">
           <a href="#">
             <img src="images/x-icon.svg" height="31px">
@@ -77,19 +79,20 @@
           <div class="contact-row">
             <div class="location-div">
               <div class="location-icon-div">
-                <img src="images/fb.png" alt="" width="11px">
+                <!-- <img src="images/fb.png" alt="" width="11px"> -->
+                <i class="fa-solid fa-location-dot"  style="color: #cf8b14;"></i>
               </div>
               <div class="location-info">
                 <strong class="location-text">Location:</strong>
                 <p class="location-area">
-                  Emmanuel Suite Umuerim, Owerri.
+                  Owerri Imo State
                 </p>
               </div>
             </div>
 
             <div class="Email-div">
               <div class="Email-icon-div">
-                <img src="images/fb.png" alt="" width="10px">
+                <i class="fa-solid fa-phone" style="color: #cf8b14;"></i>
               </div>
               <div class="Email-info">
                 <strong class="Email-text">Email:</strong>
@@ -101,12 +104,12 @@
 
             <div class="call-div">
               <div class="call-icon-div">
-                <img src="images/fb.png" alt="" width="10px">
+                <i class="fa-solid fa-envelope" style="color: #cf8b14;"></i>
               </div>
               <div class="call-info">
                 <strong class="call-text">Call</strong>
                 <p class="call-area">
-                  +234-7061126730
+                  +234 7061126730
                 </p>
               </div>
             </div>
@@ -128,8 +131,8 @@
             </div>
             <div class="message-div">
               <button class="message-btn" id="send-msg">
+                <img src="images/send.svg" alt="" width="18px">
                   Send message
-                <img src="images/send.svg" alt="" width="20px">
               </button>
             </div>
           </div>
